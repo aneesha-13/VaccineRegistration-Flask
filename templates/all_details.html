@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>All Detail</title>
+</head>
+
+<body>
+    {% for person in details %}
+    <h2>
+        {{ person.name }}
+    </h2>
+    <p>
+        <b>E-mail</b>: {{ person.email }}
+    </p>
+    <p>
+        <b>Phone</b>: {{ person.phone }}
+    </p>
+    <p>
+        <b>Age</b>: {{ person.age }}
+    </p>
+    <p>
+        <b>Vaccinated</b>: {{ person.vaccinated }}
+    </p>
+    <hr>
+    {% endfor %}
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1012.0" data-gr-ext-installed="" style="background-color:white">
+    <br>
+    <h1> <u>Register</u></h1>
+    <br><br>
+    <div class="container">
+        <form method="post" action="/add">
+            <label> Name :</label><input type="text" name="name" class="form-control" required>
+            <br>
+            <label> Email Id :</label><input type="email" name="email" class="form-control">
+            <br>
+            <div class="form-row">
+                <div class="col">
+                    <label> Phone :</label>
+                    <input type="tel" name='phone' class="form-control">
+                </div>
+                <div class="col">
+                    <label> Age:</label>
+                    <input type="number" name='age' class="form-control">
+                </div>
+            </div>
+            <br>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Vaccination:</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="vaccinated" id="vaccinated1"
+                                value="True">
+                            <label class="form-check-label" for="vaccinated1">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="vaccinated" id="vaccinated2"
+                                value="False">
+                            <label class="form-check-label" for="vaccinated2">
+                                No
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="vaccinated" id="vaccinated3"
+                                value="None" checked>
+                            <label class="form-check-label" for="vaccinated3">
+                                None
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="/add" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" placeholder="Enter your name" name="name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" name="phone"required>
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="text" placeholder="Enter your age" name="age" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="vaccinated" value="yes" id="dot-1" required>
+          <input type="radio" name="vaccinated" value="no" id="dot-2">
+          <span class="gender-title">Vaccinated?</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Yes</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">No</span>
+          </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html> -->

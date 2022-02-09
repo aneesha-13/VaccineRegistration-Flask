@@ -1,0 +1,9 @@
+name,email,phone,age,vaccinated
+"aneesha","","","","None"
+"person1","person1@gmail.com","9381306289","20","True"
+"hello","","","20","False"
+"aneesha","aneesha@gmail.com","9381306289","20","True"
+"p1","p1@gmail.com","9381306289","20","False"
+"p2","p2@gmail.com","9381306289","20","True"
+"aneesha","","","","None"
+"k","","","","False"
